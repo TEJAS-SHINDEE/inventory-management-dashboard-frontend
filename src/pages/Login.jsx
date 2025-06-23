@@ -15,7 +15,7 @@ function Login() {
       const result = await signInWithPopup(auth, provider);
       const email = result.user.email;
 
-      const res = await axios.post("http://localhost:5000/api/auth/google-login", { email });
+      const res = await axios.post("https://inventory-management-dashboard-backend-7tx4.onrender.com/api/auth/google-login", { email });
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard");
     } catch (err) {
@@ -28,8 +28,8 @@ function Login() {
   const handleEmailAuth = async (e) => {
     e.preventDefault();
     const url = isRegistering
-      ? "http://localhost:5000/api/auth/register"
-      : "http://localhost:5000/api/auth/login";
+      ? "https://inventory-management-dashboard-backend-7tx4.onrender.com/api/auth/register"
+      : "https://inventory-management-dashboard-backend-7tx4.onrender.com/api/auth/login";
 
     try {
       const res = await axios.post(url, form);

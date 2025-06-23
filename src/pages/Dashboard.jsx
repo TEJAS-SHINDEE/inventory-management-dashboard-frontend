@@ -20,7 +20,7 @@ function Dashboard() {
   // Fetch products
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products", {
+      const res = await axios.get("https://inventory-management-dashboard-backend-7tx4.onrender.com/api/products", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts(res.data);
@@ -38,7 +38,7 @@ function Dashboard() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, {
+      await axios.delete(`https://inventory-management-dashboard-backend-7tx4.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchProducts();

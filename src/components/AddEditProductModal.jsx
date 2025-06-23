@@ -30,8 +30,8 @@ function AddEditProductModal({ product, onClose, refresh }) {
     e.preventDefault();
 
     const url = product
-      ? `http://localhost:5000/api/products/${product._id}`
-      : "http://localhost:5000/api/products";
+      ? `https://inventory-management-dashboard-backend-7tx4.onrender.com/api/products/${product._id}`
+      : "https://inventory-management-dashboard-backend-7tx4.onrender.com/api/products";
 
     const method = product ? "put" : "post";
 
