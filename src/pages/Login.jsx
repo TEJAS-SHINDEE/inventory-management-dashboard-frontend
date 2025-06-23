@@ -9,7 +9,6 @@ function Login() {
   const [isRegistering, setIsRegistering] = useState(false);
   const [form, setForm] = useState({ email: "", password: "" });
 
-  // Handle Google Sign-In
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
@@ -24,7 +23,6 @@ function Login() {
     }
   };
 
-  // Handle Email Auth (Login/Register)
   const handleEmailAuth = async (e) => {
     e.preventDefault();
     const url = isRegistering

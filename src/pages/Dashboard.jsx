@@ -12,12 +12,10 @@ function Dashboard() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const token = localStorage.getItem("token");
 
-  // Protect route
   useEffect(() => {
     if (!token) navigate("/");
   }, [navigate]);
 
-  // Fetch products
   const fetchProducts = async () => {
     try {
       const res = await axios.get("https://inventory-management-dashboard-backend-7tx4.onrender.com/api/products", {
