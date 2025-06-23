@@ -57,10 +57,32 @@ this is frontent of inventory management dashboard
 ### view screenshots 
 
       
-  1. Login
-     ![Dashboard](screenshots/1.png)
+     1. Login
+          ![Login](screenshots/1.png)
 
+     2. Login ( Loading ) 
+          ![Login-loading](screenshots/2.png)
+     
+     3. Login ( sign in with google ) 
+          ![login ( sign in with google ) ](screenshots/3.png)
 
+     4. Login ( choose an account ) 
+          ![login choose an account ](screenshots/4.png)
+
+     5. Main Dashboard
+          ![Main Dashboard](screenshots/5.png)
+
+     6. Add Product 
+          ![Dashboard - add product ](screenshots/6.png)
+
+     7. Edit Product 
+          ![Dashboard - edit product ](screenshots/7.png)
+
+     8. Confirm Delete 
+          ![Dashboard - confirm delete ](screenshots/8.png)
+
+     9. product schema 
+          ![Dashboard - product schema](screenshots/9.png)
 
 
       
