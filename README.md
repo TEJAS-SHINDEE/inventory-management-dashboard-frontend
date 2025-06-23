@@ -56,6 +56,7 @@ this is frontent of inventory management dashboard
 
 ### view screenshots 
 
+![Dashboard](screenshots/1.png)
       
      1. Login
           ![Login](screenshots/1.png)
